@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            .main{
+                width: 400px;
+                height: 400px;
+                background-color: blue;
+                animation-name: background-animation;
+                animation-duration :5s;
+                animation-iteration-count: infinite;
+                
+            }
+            @keyframes background-animation{
+                0%{
+                    background-color: blue;
+                }
+                10%{
+                    background-color:pink;
+                    border-radius: 15%;
+                }
+                10%{
+                    background-color:green;
+                    border-radius: 25%;
+                }
+                10%{
+                    background-color:orangered;
+                    border-radius: 35%;
+                }
+                10%{
+                    background-color:black;
+                    border-radius: 50%;
+                }
+
+        </style>
+    </head>
+    <body>
+        <div class="main"></div>
+
+    </body>
+</html>

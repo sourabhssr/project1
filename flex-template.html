@@ -1,0 +1,274 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            header{
+                background-color: #114;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            header ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 15px 0;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            #logo{
+                color: white;
+                justify-content: center;
+                margin: auto;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            #menu li{
+                padding: 8px;
+
+            }
+            #social-link  li{
+                padding: 8px;
+
+            }
+            #social-link ul li a i:hover{
+                transform: scale(2,3);
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            aside{
+                background-color: #114;
+                flex: 0 0 200px;
+                padding: 10px;
+                color: red;
+
+            }
+            aside ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            aside ul li{
+                width: 100%;
+                display: block;
+            }
+            aside ul li a{
+                width: 100%;
+                color: white;
+                display: block;
+                text-decoration: none;
+                margin-bottom: 10px;
+                border-bottom: 1px solid white;
+            }
+            .main{
+                display: flex;
+            }
+            .containt{
+                padding: 10px;
+            }
+            .section{
+                display: flex;
+                justify-content: space-between;
+                flex-basis: 100%;
+                flex-wrap: wrap;
+
+            }
+            .section img{
+                width: 340px;
+                height: 200px;
+
+            } 
+            .sub-section{
+                margin: 10px;
+                border: 1px solid gray;
+                opacity: 0;
+                animation-name: section-animation;
+                animation-duration: 5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                flex-basis: 25%;
+            } 
+            @keyframes section-animation {
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                }
+            }
+            .sub-section h2,p{
+                padding: 10px;
+
+            }  
+            .read-more{
+                background: transparent;
+                border: 1px solid grey;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .read-more:hover{
+                background-color: #114;
+                color: white;
+                font-weight: bold;
+
+            }
+            aside{
+                margin-top: 5px;
+                margin-bottom: 5px;
+
+            }
+            aside h1{
+                color: white;
+
+            }
+            ol{
+                list-style: none;
+            }
+            ol li a{
+                margin-top: 10px;
+                display: block;
+            }
+            ol li a:before{
+                content: "$";
+                margin-right: 10px;
+            }
+            .footer{
+                background-color: #114;
+                display: flex;
+                justify-content: center;
+                color: white;
+                font-weight: bold;
+                padding: 15px;
+            }
+            @media (max-width: 800px) {
+                .sub-section{
+                    flex-basis: 45%;
+                }
+            }
+            @media(max-width: 600px) {
+                header{
+                    flex-direction: column;
+                    position: static;
+                }
+                header ul{
+                    justify-content: center;
+                    padding: 5px;
+                }
+                #logo{
+                    order: -1;
+                    padding-top: 10px;
+                }
+                .main{
+                    flex-direction: column;
+                }
+                .containt{
+                    order: -1;
+                }
+                .sub-section{
+                    flex-basis: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav id="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </nav>
+            <div id="logo">CSS Tutorial</div>
+            <nav id="social-link">
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <div class="main">
+            <aside>
+                <ul>
+                    <li><a href="">some link</a></li>
+                    <li><a href="">some link</a></li>
+                    <li><a href="">some link</a></li>
+                    <li><a href="">some link</a></li>
+                </ul>
+                <h1>Some Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem ipsum cumque beatae enim minus itaque vitae quos repellat quisquam.</p>
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, deleniti sint illum itaque possimus rem doloribus vel velit alias voluptatem repellendus impedit sunt maiores et repudiandae aliquid! Earum, dicta dolorum.</p>
+                <h1>Our Services</h1>
+                <ol>
+                    <li><a href="">Mobile application</a></li>
+                    <li><a href="">Web application</a></li>
+                    <li><a href="">Website design</a></li>
+                </ol>
+            </aside>
+            <div class="containt">
+                <h1>Know About Us</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab veritatis sit nisi architecto repudiandae reiciendis perferendis earum fuga quo consequuntur?</p>
+                <h1>Technology Used</h1>
+                <div class="section">
+                    <div class="sub-section">
+                        <img src="./images2/java.jpg"/>
+                        <h2>Java</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, eum.</p>
+                        <button class="read-more">Read more</button>
+                     </div>
+                     <div class="sub-section">
+                        <img src="./images2/android.png"/>
+                        <h2>Android</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, eum.</p>
+                        <button class="read-more">Read more</button>
+                     </div>
+                     <div class="sub-section">
+                        <img src="./images2/html.png"/>
+                        <h2>HTML</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, eum.</p>
+                        <button class="read-more">Read more</button>
+                     </div>
+               
+                    <div class="sub-section">
+                        <img src="./images2/java.jpg"/>
+                        <h2>Java</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, eum.</p>
+                        <button class="read-more">Read more</button>
+                     </div>
+                     <div class="sub-section">
+                        <img src="./images2/android.png"/>
+                        <h2>Android</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, eum.</p>
+                        <button class="read-more">Read more</button>
+                     </div>
+                     <div class="sub-section">
+                        <img src="./images2/html.png"/>
+                        <h2>HTML</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, eum.</p>
+                        <button class="read-more">Read more</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Made by students</div>
+    </body>
+</html>    
